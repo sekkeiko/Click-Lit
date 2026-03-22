@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Click-Lit</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header> <section class="header">
+            <div class="logo">
+                <h2 class="logo1">Click-</h2>
+                <h2 class="logo2"><i>Lit</i></h2>
+            </div>
+            <nav class="navigation">
+                <a href="./index.html">Home</a>
+                <a href="lessons.html">Lessons</a>
+                <a href="activities.html" class="active">Activity</a>
+                <a href="about.html">About</a>
+            </nav>
+        </section> </header>
+
+        <h1 class="atitle">Scrabbled Story</h1>
+        
+        <div class="cards-container">
+        <div class="acard draggable">Exposition</div>
+        <div class="acard draggable">Rising Action</div>
+        <div class="acard draggable">Climax</div>
+        <div class="acard draggable">Falling Action</div>
+        <div class="acard draggable">Resolution</div>
+        </div>
+
+        <div class="line1"></div>
+
+        <div class="direction">Direction: Read each part of the story carefully. Then, choose the correct plot element and place it on the part of the story where it belongs.</div>
+
+        <div class="line2"></div>
+
+        <div class="story-layout">
+        <div class="side-column">
+            <div class="story-card">
+                <div class="story-text">The story begins with Naomi and her family living a peaceful life in Northern Luzon until a severe drought forces them to move to Mindanao.</div>
+                <div class="drop-line" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragleave="handleDragLeave(event)"></div>
+            </div>
+            <div class="story-card">
+                <div class="story-text">In the end, Boaz marries Ruth, and they have a son named Obed, bringing joy and restoration to Naomi's life.</div>
+                <div class="drop-line" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragleave="handleDragLeave(event)"></div>
+            </div>
+        </div>
+        
+        <div class="middle-column">
+            <div class="story-card">
+                <div class="story-text">In their new home, her sons marry Ruth and Orpah, but tragedy strikes when Naomi's husband and sons die, leaving her widowed and grieving. Naomi decides to return to her hometown, and while Orpah stays behind, Ruth chooses to remain loyal and go with her. Back in Northern Luzon, Ruth works hard in the rice fields and eventually meets Boaz, a kind and generous landowner who notices her dedication and loyalty.</div>
+                <div class="drop-line" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragleave="handleDragLeave(event)"></div>
+            </div>
+        </div>
+        
+        <div class="side-column">
+            <div class="story-card">
+                <div class="story-text">As time passes, Ruth earns Boaz's trust and respect, and he continues to care for them.</div>
+                <div class="drop-line" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragleave="handleDragLeave(event)"></div>
+            </div>
+            <div class="story-card">
+                <div class="story-text">Boaz recognizes Ruth's good character and decides to take responsibility for her and Naomi.</div>
+                <div class="drop-line" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragleave="handleDragLeave(event)"></div>
+            </div>
+        </div>
+    </div>
+
+<div class="submit-container">
+    <button id="submitBtn" class="submit-btn" style="display: none;">Submit Answers</button>
+    <div id="resultBtns" style="display: none; align-items: center;">
+        <button id="tryAgainBtn" class="try-again-btn">Try Again</button>
+        <button id="finishBtn" class="finish-btn">Finish</button>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+    </body>
+</html>    
